@@ -1,4 +1,4 @@
-# INTALAÇÃO DO AMBIENTE PARA O CHATTERBOT
+# INTALAÇÃO DO AMBIENTE PARA O CHATBOT
 
 Para iniciar o chatbot do Fatequino em sua máquina, os seguintes softwares são necessários:
 
@@ -14,7 +14,7 @@ https://www.mongodb.com/try/download/community
 
 >Após o término do download, clique no programa e aceite as condições de uso e escolha a opção complete
 
-*Atente-se ao caminho que o MongoDB foi instalado, caso não tenha modificado o caminho de instalação o local que ele foi instalado normalmente é: Disco Local > Arquivos de Programas > MongoDB > Server > “versão baixada” > bin. Dentro da pasta temos dois arquivos importantes o mongo e mongod.
+Atente-se ao caminho que o MongoDB foi instalado, caso não tenha modificado o caminho de instalação o local que ele foi instalado normalmente é: Disco Local > Arquivos de Programas > MongoDB > Server > “versão baixada” > bin. Dentro da pasta temos dois arquivos importantes o mongo e mongod.
 
 O Mongod é um servidor do banco de dados e o Mongo é uma aplicação shell, utilizado para digitar as linhas de comandos de interação, exclusão, inclusão ou buscar um determinado documento dentro do bando de dados do MongoDB. Para podermos utilizá-lo sem problemas no prompt é preciso criar uma variável de ambiente.
 
@@ -32,16 +32,16 @@ O Mongod é um servidor do banco de dados e o Mongo é uma aplicação shell, ut
 
 >Lembrando que o 4.4 é a versão, então atente-se qual foi a versão instalada no computador. Após preencher os valores clique em todos os OK, para salvar, caso contrário o caminho não será salvo. Para saber se está correto e o caminho funcionado, use o prompt e digite: mongod -version Se a versão aparecer está correto, caso contrário verifique se o caminho e o nome da variável estão corretos.
 
-*Uma dica é abrir outro cmd caso você tenha usado antes de fazer a variável de ambiente. Depois é preciso subir o banco, basta digitar mongod. Caso aja um problema exception in initAndListen: 29 Data directory C:\data\db\not found., terminating Isso siginifica que ele não esta encontrando o diretório data e para isso basta seguir os comandos: • cd.. (para voltar no diretório anterior) digite até ficar no “C:>”; • md data (cria um diretório chamado data); • cd data (para entrar dentro do diretório data); • md db (cria um diretório db); • cd db (entrar dentro do diretório db) • mongod (para inicializar o MongoDB)
+Uma dica é abrir outro cmd caso você tenha usado antes de fazer a variável de ambiente. Depois é preciso subir o banco, basta digitar mongod. Caso aja um problema exception in initAndListen: 29 Data directory C:\data\db\not found., terminating Isso siginifica que ele não esta encontrando o diretório data e para isso basta seguir os comandos: • cd.. (para voltar no diretório anterior) digite até ficar no “C:>”; • md data (cria um diretório chamado data); • cd data (para entrar dentro do diretório data); • md db (cria um diretório db); • cd db (entrar dentro do diretório db) • mongod (para inicializar o MongoDB)
 
-*A janela não poderá ser fechada, caso contrário é como se estivéssemos encerrando o servidor.
+A janela não poderá ser fechada, caso contrário é como se estivéssemos encerrando o servidor.
 
-##PYTHON E PIP
+## PYTHON E PIP
 >Para instalação do python baixe o no link abaixo: https://www.python.org/downloads/
 
 >Escolha a versão mais atualizada e execute. Antes de clicar em Install Now, selecione a opção Add Python to PATH, isso irá poupar o trabalho de criar uma variável de ambiente. Caso tenha esquecido de selecionar essa opção é só seguir o passo-a-passo no tópico 1.2 VARIÁVEL DE AMBIENTE. Depois de clicar em Install Now, a próxima janela será Optional Feature e deixe tudo selecionado (padrão). A tela Advance Optional, não precisa marcar ou desmarcar nenhum item, deixe padrão. Nessa mesma tela se atente ao caminho que o Python esta sendo instalado, caso não tenha marcado a opção de Add Python to PATH é melhor copiar e colar esse caminho, para utilizar mais tarde. Depois de instalado use o prompt para ver se deu certo com o comando python -V
 
-*Caso não apareça verifique nas variáveis de ambiente se foi criado o PATH python.
+Caso não apareça verifique nas variáveis de ambiente se foi criado o PATH python.
 
 ## Post da base de dados do ChatBot
 
@@ -49,7 +49,7 @@ O Mongod é um servidor do banco de dados e o Mongo é uma aplicação shell, ut
 
 >Baixar o Postman ou acessar https://www.postman.com/
 
-Para inserção de dados de aulas siga os passos abaixo:
+* Para inserção de dados de aulas siga os passos abaixo:
 
 >Em WorkSpaces, crie uma nova aba configure para POST e insira a URL http://127.0.0.1:5000/aulasInfo no campo de URL
 
